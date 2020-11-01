@@ -4,7 +4,6 @@ import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { css } from '@emotion/core';
 import Layout from '../components/layout';
 import ReadLink from '../components/read-link';
-
 export const query = graphql`
   query($slug: String!) {
     mdx(frontmatter: { slug: { eq: $slug } }) {
